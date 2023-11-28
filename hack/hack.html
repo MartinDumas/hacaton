@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оцінка перевізника</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="rating-container">
+        <h1>Оцініть перевізника</h1>
+        <div class="stars" id="ratingStars">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+        </div>
+
+        <label for="comment">Додати коментар:</label>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+
+        <button id="submitButton" onclick="submitRating()">Відправити</button>
+
+        <p id="resultMessage"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
