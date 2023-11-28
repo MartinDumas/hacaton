@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Professional User Profile</title>
+</head>
+<body>
+    <body style="background-color: #ecf0f1;">
+
+       
+        <div class="form-section">
+         
+          <div class="form-group">
+            <label for="profilePicture">Ваше фото:</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+          </div>
+        </div>
+  <div class="profile-container">
+    <h2>Налаштування особистого кабінету(перевізник)</h2>
+
+    <form id="profileForm">
+      <div class="form-section">
+        <h3>Водійські права</h3>
+        <div class="form-group">
+          <label for="driverLicenseNumber">Номер водійських прав:</label>
+          <input type="text" id="driverLicenseNumber" name="driverLicenseNumber" placeholder="Введіть номер" required>
+        </div>
+        <div class="form-group">
+          <label for="driverLicenseCategory">Категорія водійських прав:</label>
+          <input type="text" id="driverLicenseCategory" name="driverLicenseCategory" placeholder="Введіть категорію" required>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h3>Страхування</h3>
+        <div class="form-group">
+          <label for="insuranceInfo">Дані страхування:</label>
+          <input type="text" id="insuranceInfo" name="insuranceInfo" placeholder="Введіть дані страхування" required>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h3>Співпраця з фірмою</h3>
+        <div class="form-group">
+          <label for="companyName">Назва фірми:</label>
+          <input type="text" id="companyName" name="companyName" placeholder="Введіть назву фірми">
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h3>Транспортні засоби</h3>
+        <div id="vehicles">
+          <div class="form-group">
+            <label for="vehicleBrand">Марка транспортного засобу:</label>
+            <input type="text" id="vehicleBrand" name="vehicleBrand" placeholder="Введіть марку" required>
+          </div>
+          <div class="form-group">
+            <label for="vehicleType">Тип транспортного засобу:</label>
+            <input type="text" id="vehicleType" name="vehicleType" placeholder="Введіть тип" required>
+          </div>
+          <div class="form-group">
+            <label for="vehicleNumber">Номер транспортного засобу:</label>
+            <input type="text" id="vehicleNumber" name="vehicleNumber" placeholder="Введіть номер" required>
+          </div>
+          <button type="button" onclick="addVehicle()">Додати транспортний засіб</button>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h3>Місце проживання</h3>
+        <div class="form-group">
+          <label for="location">Ваше місце проживання:</label>
+          <input type="text" id="location" name="location" placeholder="Введіть ваше місце проживання" required>
+        </div>
+      </div>
+
+      <button type="submit">Зберегти</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
